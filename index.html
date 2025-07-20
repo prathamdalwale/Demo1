@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HealthPlus Hospital - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    /* Simple slider transition */
+    .slide {
+      display: none;
+    }
+
+    .active-slide {
+      display: block;
+    }
+  </style>
+
+</head>
+
+<body class="font-sans bg-gray-100">
+
+  <!-- Navbar -->
+  <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6 transition-all duration-300">
+      <h1 class="text-2xl font-bold hover:text-yellow-300 cursor-pointer">HealthPlus Hospital</h1>
+      <nav class="space-x-6 text-lg">
+        <a href="index.html" class="hover:text-yellow-300 transition duration-300">Home</a>
+        <a href="about.html" class="hover:text-yellow-300 transition duration-300">About</a>
+        <a href="services.html" class="hover:text-yellow-300 transition duration-300">Services</a>
+        <a href="doctors.html" class="hover:text-yellow-300 transition duration-300">Doctors</a>
+        <a href="appointment.html" class="hover:text-yellow-300 transition duration-300">Appointment</a>
+        <a href="contact.html" class="hover:text-yellow-300 transition duration-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section (Full-width Image Slider) -->
+  <section class="relative w-full h-screen overflow-hidden">
+    <!-- Slides -->
+    <div class="slide active-slide">
+      <img src="https://imgs.search.brave.com/dMcKPzhH_sshKqqFCHo1vZ0HHDBWK4Ppm2HmLIjetVA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ob3NwaXRhbC1j/b3JyaWRvci13aXRo/LXBsYW50LWZsb29y/XzExNTgyNzEtMjI1/NC5qcGc_c2VtdD1h/aXNfaHlicmlk" alt="Hospital Image 1" class="w-full h-screen object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center text-white">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Welcome to HealthPlus Hospital</h2>
+        <p class="text-lg md:text-2xl mb-6">Your health, our priority.</p>
+        <a href="appointment.html" class="bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700">Book Appointment</a>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="https://www.shutterstock.com/shutterstock/videos/1109713317/thumb/1.jpg?ip=x480" alt="Hospital Image 2" class="w-full h-screen object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center text-white">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Advanced Medical Facilities</h2>
+        <p class="text-lg md:text-2xl mb-6">We care for you with the latest technology.</p>
+        <a href="services.html" class="bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700">Explore Services</a>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="https://media.istockphoto.com/id/1460099874/photo/nurse-checking-on-a-patient.jpg?s=612x612&w=0&k=20&c=Nc1xxXBioaZDooQynLqPAcSAI5TPtBPd89D5XfwTCy0=" alt="Hospital Image 3" class="w-full h-screen object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center text-white">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Trusted Doctors & Staff</h2>
+        <p class="text-lg md:text-2xl mb-6">Experienced healthcare professionals at your service.</p>
+        <a href="doctors.html" class="bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700">Meet Our Team</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Overview Section -->
+  <section class="py-16 px-6 container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h3 class="text-4xl font-bold text-blue-700 mb-6">Comprehensive Patient Care</h3>
+        <p class="text-gray-700 text-lg mb-6">
+          At HealthPlus Hospital, we provide personalized treatment plans tailored to each patient's needs. Our dedicated team ensures you receive holistic care throughout your journey with us.
+        </p>
+        <ul class="list-disc pl-6 text-gray-800 space-y-4 text-md">
+          <li>24/7 Emergency Services</li>
+          <li>Highly Qualified Doctors</li>
+          <li>Advanced Diagnostic Facilities</li>
+          <li>Patient-Centered Approach</li>
+        </ul>
+      </div>
+
+      <div>
+        <img src="https://asianheartinstitute.org/wp-content/uploads/2023/12/home-banner-mob.webp"
+             alt="Hospital Interior" 
+             class="w-full h-auto rounded-lg shadow-xl transform hover:scale-105 transition duration-500">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-blue-600 text-white fade-in">
+  <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- About -->
+    <div class="slide-up">
+      <h4 class="text-xl font-semibold mb-4">About HealthPlus</h4>
+      <p class="text-sm leading-relaxed">
+        HealthPlus Hospital is dedicated to providing the best healthcare services with state-of-the-art facilities and highly skilled professionals.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="slide-up">
+      <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-yellow-300 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300 transition">About</a></li>
+        <li><a href="services.html" class="hover:text-yellow-300 transition">Services</a></li>
+        <li><a href="doctors.html" class="hover:text-yellow-300 transition">Doctors</a></li>
+        <li><a href="appointment.html" class="hover:text-yellow-300 transition">Appointment</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-300 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="slide-up">
+      <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+      <ul class="text-sm space-y-2">
+        <li>📍 123 Health St, Pune, India</li>
+        <li>📞 +91 98765 43210</li>
+        <li>✉️ info@healthplus.com</li>
+      </ul>
+
+      <!-- Social Icons -->
+      <div class="flex space-x-4 mt-4">
+        <a href="#" class="text-white hover:text-yellow-300">
+          <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+            <path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07C2 17.1 5.66 21.13 10.44 22v-7.03h-3.1v-2.9h3.1V9.64c0-3.07 1.82-4.77 4.6-4.77 1.33 0 2.72.24 2.72.24v2.98h-1.53c-1.5 0-1.97.93-1.97 1.88v2.25h3.34l-.53 2.9h-2.8V22C18.34 21.13 22 17.1 22 12.07z"/>
+          </svg>
+        </a>
+        <a href="#" class="text-white hover:text-yellow-300">
+          <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+            <path d="M22.23 0H1.77C.79 0 0 .78 0 1.75v20.5C0 23.22.79 24 1.77 24h20.46c.98 0 1.77-.78 1.77-1.75V1.75C24 .78 23.21 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zm15.11 13.02h-3.56v-5.58c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.68h-3.56V9h3.42v1.56h.05c.48-.9 1.66-1.86 3.42-1.86 3.66 0 4.34 2.41 4.34 5.54v6.21z"/>
+          </svg>
+        </a>
+        <a href="#" class="text-white hover:text-yellow-300">
+          <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+            <path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 2.86 8.16 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.63.07-.62.07-.62 1 .07 1.52 1.03 1.52 1.03.89 1.51 2.33 1.08 2.9.83.09-.65.35-1.08.64-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.54 9.54 0 0112 6.8c.85.004 1.7.11 2.5.32 1.9-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48a10 10 0 006.84-9.5c0-5.5-4.46-9.96-9.96-9.96z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center py-4 border-t border-blue-400 text-sm">
+    &copy; 2025 HealthPlus Hospital. All rights reserved.
+  </div>
+</footer>
+
+
+
+  <!-- Auto Slider Script -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active-slide');
+        if (i === index) {
+          slide.classList.add('active-slide');
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    // Auto-slide every 2 seconds
+    setInterval(nextSlide, 2000);
+  </script>
+
+  <!-- FontAwesome for icons (optional) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
